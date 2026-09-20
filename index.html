@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="爱图客 - 专业的高清图片素材与版权图库平台，提供商用无版权图片、矢量图、矢量素材及设计资源下载，满足企业、自媒体及设计师的视觉需求。">
+    <meta name="keywords" content="爱图客,免费图片,无版权图片,商用素材,矢量图,设计素材,高清图库">
+    <title>爱图客 - 高清商用无版权图片与设计素材库</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #3b82f6;
+            --primary-hover: #2563eb;
+            --secondary-color: #1e293b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-sub: #64748b;
+            --border-color: #e2e8f0;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .gap-2 { gap: 0.5rem; }
+        .gap-4 { gap: 1rem; }
+
+        /* Header */
+        header {
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-sub);
+            font-size: 0.95rem;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.5rem 1.25rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--border-color);
+            background: transparent;
+            color: var(--text-main);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+            border: 1px solid var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-hover);
+            border-color: var(--primary-hover);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0;
+            text-align: center;
+            background: linear-gradient(180deg, #ffffff 0%, var(--bg-color) 100%);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+            letter-spacing: -0.02em;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            color: var(--text-sub);
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .search-box {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            border: 1px solid var(--border-color);
+            font-size: 1rem;
+            outline: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.2s;
+        }
+
+        .search-box input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .search-box button {
+            position: absolute;
+            right: 6px;
+            top: 6px;
+            bottom: 6px;
+            padding: 0 2rem;
+            border-radius: 40px;
+        }
+
+        /* Categories */
+        .categories {
+            padding: 3rem 0;
+        }
+
+        .section-header {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .section-header h2 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+        }
+
+        .section-header p {
+            color: var(--text-sub);
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .category-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+            border-color: var(--primary-color);
+        }
+
+        .category-icon {
+            width: 48px;
+            height: 48px;
+            background: #eff6ff;
+            color: var(--primary-color);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+        }
+
+        .category-card h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .category-card p {
+            font-size: 0.8rem;
+            color: var(--text-sub);
+        }
+
+        /* Featured Grid */
+        .featured {
+            padding: 3rem 0;
+            background: #fff;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .image-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: box-shadow 0.2s;
+        }
+
+        .image-card:hover {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-wrapper {
+            position: relative;
+            padding-top: 66.67%; /* 3:2 Aspect Ratio */
+            overflow: hidden;
+            background: #f1f5f9;
+        }
+
+        .img-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .image-card:hover .img-wrapper img {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 1rem;
+        }
+
+        .card-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.6rem;
+            background: #f1f5f9;
+            color: var(--text-sub);
+            border-radius: 4px;
+        }
+
+        .card-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0.75rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--text-sub);
+        }
+
+        .author img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+
+        .price-tag {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        /* Feature Highlights */
+        .features {
+            padding: 4rem 0;
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .feature-item h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .feature-item p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 4rem 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 0;
+        }
+
+        .faq-item summary {
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .faq-item[open] summary::after {
+            content: '-';
+        }
+
+        .faq-item p {
+            margin-top: 1rem;
+            color: var(--text-sub);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #fff;
+            border-top: 1px solid var(--border-color);
+            padding: 4rem 0 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand p {
+            color: var(--text-sub);
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            max-width: 300px;
+        }
+
+        .footer-col h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            color: var(--secondary-color);
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-col ul li a {
+            color: var(--text-sub);
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-sub);
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            nav { display: none; } /* Simplified for mobile */
+            .header-actions .btn-outline { display: none; }
+            .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .container { padding: 0 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container flex items-center justify-between">
+            <a href="#" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 16L7 13L10 16L16 10L20 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="2" y="3" width="20" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                爱图客
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">热门分类</a></li>
+                    <li><a href="#">最新上传</a></li>
+                    <li><a href="#">设计师专区</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#" class="btn btn-outline">登录</a>
+                <a href="#" class="btn btn-primary">注册</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>发现无限创意，激发视觉灵感</h1>
+                <p>爱图客汇聚全球优质摄影师与设计师作品，提供高清、可商用、无版权风险的图片素材与矢量素材，助力您的项目脱颖而出。</p>
+                <div class="search-box">
+                    <input type="text" placeholder="搜索关键词，例如：自然、科技、商务...">
+                    <button class="btn btn-primary">搜索</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories container">
+            <div class="section-header">
+                <h2>热门素材分类</h2>
+                <p>超过 200+ 个细分领域，精准匹配您的需求</p>
+            </div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">📷</div>
+                    <h3>摄影图片</h3>
+                    <p>风景、人像、建筑</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3>矢量插画</h3>
+                    <p>扁平、手绘、3D</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">📐</div>
+                    <h3>矢量素材</h3>
+                    <p>图标、背景、装饰</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎭</div>
+                    <h3>3D 模型</h3>
+                    <p>场景、物体、角色</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">✏️</div>
+                    <h3>字体设计</h3>
+                    <p>中英文字体、艺术字</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🖼️</div>
+                    <h3>背景素材</h3>
+                    <p>纹理、渐变、纯色</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🛠️</div>
+                    <h3>UI/UX 图标</h3>
+                    <p>APP、网页、界面</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🧩</div>
+                    <h3>素材包</h3>
+                    <p>组合资源、套装</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <div class="container">
+                <div class="section-header">
+                    <h2>精选推荐</h2>
+                    <a href="#" class="btn btn-outline">查看更多</a>
+                </div>
+                <div class="image-grid">
+                    <article class="image-card">
+                        <div class="img-wrapper">
+                            <img src="https://picsum.photos/seed/tech1/400/300" alt="科技商务办公场景">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-tags">
+                                <span class="tag">商务</span>
+                                <span class="tag">办公</span>
+                            </div>
+                            <h3 class="card-title">现代化办公室团队协作会议</h3>
+                            <div class="card-footer">
+                                <div class="author">
+                                    <img src="https://picsum.photos/seed/user1/50/50" alt="头像">
+                                    <span>设计大师</span>
+                                </div>
+                                <span class="price-tag">免费</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="image-card">
+                        <div class="img-wrapper">
+                            <img src="https://picsum.photos/seed/nature2/400/300" alt="自然风光">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-tags">
+                                <span class="tag">自然</span>
+                                <span class="tag">风景</span>
+                            </div>
+                            <h3 class="card-title">宁静的晨曦湖畔森林</h3>
+                            <div class="card-footer">
+                                <div class="author">
+                                    <img src="https://picsum.photos/seed/user2/50/50" alt="头像">
+                                    <span>光影捕手</span>
+                                </div>
+                                <span class="price-tag">¥29</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="image-card">
+                        <div class="img-wrapper">
+                            <img src="https://picsum.photos/seed/abstract3/400/300" alt="抽象背景">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-tags">
+                                <span class="tag">设计</span>
+                                <span class="tag">背景</span>
+                            </div>
+                            <h3 class="card-title">蓝色渐变几何抽象背景</h3>
+                            <div class="card-footer">
+                                <div class="author">
+                                    <img src="https://picsum.photos/seed/user3/50/50" alt="头像">
+                                    <span>几何工坊</span>
+                                </div>
+                                <span class="price-tag">免费</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="image-card">
+                        <div class="img-wrapper">
+                            <img src="https://picsum.photos/seed/people4/400/300" alt="人物肖像">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-tags">
+                                <span class="tag">人像</span>
+                                <span class="tag">时尚</span>
+                            </div>
+                            <h3 class="card-title">时尚街拍风格人物特写</h3>
+                            <div class="card-footer">
+                                <div class="author">
+                                    <img src="https://picsum.photos/seed/user4/50/50" alt="头像">
+                                    <span>街拍日记</span>
+                                </div>
+                                <span class="price-tag">¥59</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h3>✓ 商用授权</h3>
+                        <p>所有素材均经过严格筛选，提供清晰的商用授权，无需担心版权纠纷，让您的设计项目安全无忧。</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>✓ 高清画质</h3>
+                        <p>提供高达 4K 甚至更高分辨率的图片与矢量文件，保证在任何尺寸下都能呈现完美的视觉效果。</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>✓ 持续更新</h3>
+                        <p>每日新增海量优质素材，紧跟潮流趋势，无论是经典风格还是前沿设计，这里应有尽有。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq container">
+            <div class="section-header">
+                <h2>常见问题</h2>
+            </div>
+            <details class="faq-item">
+                <summary>素材可以免费商用吗？</summary>
+                <p>爱图客平台上的部分素材标有“免费”字样，可免费用于个人及商业项目。部分精选素材需购买授权，购买后即可获得完整的商用权利。</p>
+            </details>
+            <details class="faq-item">
+                <summary>如何确认下载的图片质量？</summary>
+                <p>我们提供高清预览图，您可以在点击下载前查看。部分素材提供不同分辨率供选择，建议下载前在本地打开预览确认细节。</p>
+            </details>
+            <details class="faq-item">
+                <summary>如果素材不符合我的需求怎么办？</summary>
+                <p>您可以使用搜索功能尝试更多关键词，或浏览热门分类。同时，我们支持用户投稿，如果您有特定需求，也可以联系客服协助寻找。</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 16L7 13L10 16L16 10L20 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="2" y="3" width="20" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        爱图客
+                    </a>
+                    <p>致力于为设计师、企业及自媒体提供最优质的视觉资源解决方案，让创作更简单。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>探索</h4>
+                    <ul>
+                        <li><a href="#">最新上传</a></li>
+                        <li><a href="#">热门榜单</a></li>
+                        <li><a href="#">编辑精选</a></li>
+                        <li><a href="#">设计师专访</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>资源</h4>
+                    <ul>
+                        <li><a href="#">免费素材</a></li>
+                        <li><a href="#">矢量下载</a></li>
+                        <li><a href="#">版权教程</a></li>
+                        <li><a href="#">素材工具</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>支持</h4>
+                    <ul>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">版权声明</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">加入我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 爱图客 All Rights Reserved. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+                                          </html>

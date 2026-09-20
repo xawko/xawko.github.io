@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台球室效果图-专业台球空间设计与装修案例展示</title>
+    <meta name="description" content="本站提供海量台球室效果图、专业台球厅装修设计方案、中式八球与美式撞球台布局参考，包含灯光设计、球桌摆放及动线规划，助力打造高端舒适的专业台球空间。">
+    <meta name="keywords" content="台球室效果图,台球厅装修设计,台球桌摆放效果图,台球室灯光设计,中式八球厅装修">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #d4af37;
+            --accent-hover: #b5952f;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-color);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .cta-btn {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--accent-color);
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/seed/poolroom/1920/1080');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero-search {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .hero-input {
+            padding: 12px 20px;
+            border-radius: 4px;
+            border: none;
+            width: 300px;
+            font-size: 16px;
+        }
+
+        .hero-btn {
+            padding: 12px 30px;
+            background-color: var(--accent-color);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .hero-btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        /* Layout Grid */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-header {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--primary-color);
+            position: relative;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            bottom: -17px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-color);
+        }
+
+        .section-more {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery-item {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .gallery-img-wrapper {
+            position: relative;
+            padding-top: 66.66%; /* 3:2 Aspect Ratio */
+            overflow: hidden;
+        }
+
+        .gallery-img-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover .gallery-img-wrapper img {
+            transform: scale(1.05);
+        }
+
+        .gallery-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(44, 62, 80, 0.8);
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .gallery-info {
+            padding: 20px;
+        }
+
+        .gallery-title {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .gallery-meta {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+
+        /* Design Categories */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .category-card {
+            background-color: var(--card-bg);
+            padding: 30px 20px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .category-card:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-5px);
+        }
+
+        .category-icon {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: var(--accent-color);
+        }
+
+        .category-name {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .category-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        /* Design Guide Section */
+        .guide-section {
+            background-color: #fff;
+            padding: 60px 0;
+            margin-top: 40px;
+            border-top: 1px solid #eee;
+        }
+
+        .guide-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .guide-content h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .guide-content p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .guide-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .guide-list li::before {
+            content: '✓';
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .guide-image img {
+            width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-hover);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            color: #bdc3c7;
+            font-size: 14px;
+        }
+
+        .footer-col a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #7f8c8d;
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .categories-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .guide-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header-container {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            .hero-search {
+                flex-direction: column;
+            }
+
+            .hero-input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span>🎱</span> 极致台球设计
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">案例图库</a></li>
+                    <li><a href="#">装修指南</a></li>
+                    <li><a href="#">灯光方案</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="cta-btn">预约设计咨询</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>打造专业级台球室空间</h1>
+                <p>汇聚海量优质台球室效果图，从中式八球厅到高端美式球房，为您提供灵感和落地参考。</p>
+                <div class="hero-search">
+                    <input type="text" class="hero-input" placeholder="搜索风格或区域（如：欧式、北京）">
+                    <button class="hero-btn">搜索效果图</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Categories -->
+        <section class="container">
+            <div class="section-header">
+                <h2 class="section-title">设计风格分类</h2>
+                <a href="#" class="section-more">查看更多分类 &rarr;</a>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">🛋️</div>
+                    <h3 class="category-name">中式八球厅</h3>
+                    <p class="category-desc">实用为主，注重球桌数量与动线流畅度，营造热闹氛围。</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🇺🇸</div>
+                    <h3 class="category-name">美式球房</h3>
+                    <p class="category-desc">宽敞舒适，强调高端体验，适合家庭娱乐或商务接待。</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">✨</div>
+                    <h3 class="category-name">电竞台球馆</h3>
+                    <p class="category-desc">现代工业风，结合电竞元素，吸引年轻消费群体。</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🏛️</div>
+                    <h3 class="category-name">复古豪华风</h3>
+                    <p class="category-desc">欧式宫廷风格，使用真皮沙发与水晶吊灯，提升格调。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="container">
+            <div class="section-header">
+                <h2 class="section-title">热门台球室效果图</h2>
+                <a href="#" class="section-more">浏览全部图集 &rarr;</a>
+            </div>
+            <div class="gallery-grid">
+                <article class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <span class="gallery-tag">中式八球</span>
+                        <img src="https://picsum.photos/seed/pool1/600/400" alt="大型中式八球厅装修效果图">
+                    </div>
+                    <div class="gallery-info">
+                        <h3 class="gallery-title">城市中心大型八球俱乐部</h3>
+                        <div class="gallery-meta">
+                            <span>1200㎡ · 24张球桌</span>
+                            <span>2023-10-15</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <span class="gallery-tag">美式台球</span>
+                        <img src="https://picsum.photos/seed/pool2/600/400" alt="高端美式球房效果图">
+                    </div>
+                    <div class="gallery-info">
+                        <h3 class="gallery-title">云端美式私人球房</h3>
+                        <div class="gallery-meta">
+                            <span>200㎡ · 6张球桌</span>
+                            <span>2023-10-12</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <span class="gallery-tag">电竞台球</span>
+                        <img src="https://picsum.photos/seed/pool3/600/400" alt="电竞风格台球室设计">
+                    </div>
+                    <div class="gallery-info">
+                        <h3 class="gallery-title">赛博朋克电竞台球馆</h3>
+                        <div class="gallery-meta">
+                            <span>800㎡ · 12张球桌</span>
+                            <span>2023-10-08</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <span class="gallery-tag">灯光设计</span>
+                        <img src="https://picsum.photos/seed/pool4/600/400" alt="专业台球厅灯光布局">
+                    </div>
+                    <div class="gallery-info">
+                        <h3 class="gallery-title">无影灯照明系统方案</h3>
+                        <div class="gallery-meta">
+                            <span>技术解析</span>
+                            <span>2023-10-05</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <span class="gallery-tag">休闲区</span>
+                        <img src="https://picsum.photos/seed/pool5/600/400" alt="台球室休息区沙发设计">
+                    </div>
+                    <div class="gallery-info">
+                        <h3 class="gallery-title">舒适休息区与酒吧台</h3>
+                        <div class="gallery-meta">
+                            <span>休闲配套</span>
+                            <span>2023-10-01</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <span class="gallery-tag">包间</span>
+                        <img src="https://picsum.photos/seed/pool6/600/400" alt="VIP包间装修效果">
+                    </div>
+                    <div class="gallery-info">
+                        <h3 class="gallery-title">豪华VIP私密包间</h3>
+                        <div class="gallery-meta">
+                            <span>私密空间</span>
+                            <span>2023-09-28</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Design Guide Section -->
+        <section class="guide-section">
+            <div class="container">
+                <div class="guide-grid">
+                    <div class="guide-content">
+                        <h2>台球室装修核心指南</h2>
+                        <p>设计一个成功的台球室，不仅需要美观的台球室效果图，更需要科学的动线规划与专业的照明系统。</p>
+                        <ul class="guide-list">
+                            <li><strong>灯光布局：</strong> 专业的无影灯应安装在球桌正上方，色温控制在4000K-5000K，避免光线折射影响球员视觉。</li>
+                            <li><strong>动线规划：</strong> 球桌摆放需留出至少1.5米的通道，确保两名球员击球互不干扰，同时方便服务员清理球袋。</li>
+                            <li><strong>地面处理：</strong> 建议使用弹性地胶或防滑木地板，既保护球员膝盖，又能减少球体滚动噪音。</li>
+                            <li><strong>隔音处理：</strong> 墙体需采用隔音棉或吸音板，降低球体撞击声对周边环境的影响。</li>
+                        </ul>
+                    </div>
+                    <div class="guide-image">
+                        <img src="https://picsum.photos/seed/poolinterior/800/600" alt="台球室内部细节设计">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="container">
+            <div class="section-header">
+                <h2 class="section-title">常见问题解答</h2>
+            </div>
+            <div style="max-width: 800px;">
+                <details style="margin-bottom: 15px; border: 1px solid #eee; border-radius: 4px; padding: 15px; cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--primary-color);">普通家庭娱乐台球室需要多大空间？</summary>
+                    <p style="margin-top: 10px; color: var(--text-secondary);">建议至少保留15-20平方米的空间，以容纳一张1.2米或1.4米的标准球桌，并留出基本的击球和走动区域。</p>
+                </details>
+                <details style="margin-bottom: 15px; border: 1px solid #eee; border-radius: 4px; padding: 15px; cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--primary-color);">台球厅装修需要注意哪些消防规范？</summary>
+                    <p style="margin-top: 10px; color: var(--text-secondary);">必须配备足够的消防喷淋和烟感报警系统。装饰材料应使用阻燃级，且不得堵塞安全出口。建议咨询当地消防部门进行报备。</p>
+                </details>
+                <details style="margin-bottom: 15px; border: 1px solid #eee; border-radius: 4px; padding: 15px; cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--primary-color);">如何选择合适的球桌尺寸？</summary>
+                    <p style="margin-top: 10px; color: var(--text-secondary);">中式八球通常使用9英尺或8英尺球桌；美式8球常用8英尺；9球比赛通常使用9英尺球桌。装修前需明确主要经营项目以确定尺寸。</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>🎱 极致台球设计</h3>
+                <p style="color: #bdc3c7; font-size: 14px; line-height: 1.8;">
+                    专注台球室空间设计与装修案例分享，为您提供从概念到落地的全方位视觉参考。
+                </p>
+            </div>
+            <div class="footer-col">
+                <h3>设计分类</h3>
+                <ul>
+                    <li><a href="#">中式八球厅</a></li>
+                    <li><a href="#">美式球房</a></li>
+                    <li><a href="#">电竞风格</a></li>
+                    <li><a href="#">私人定制</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>装修指南</h3>
+                <ul>
+                    <li><a href="#">灯光设计规范</a></li>
+                    <li><a href="#">动线布局方案</a></li>
+                    <li><a href="#">地面材料选择</a></li>
+                    <li><a href="#">隔音降噪技巧</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>联系我们</h3>
+                <ul>
+                    <li><a href="#">合作咨询</a></li>
+                    <li><a href="#">案例投稿</a></li>
+                    <li><a href="#">加入我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 极致台球设计网. All Rights Reserved. 本站所有图片仅供展示参考.</p>
+        </div>
+    </footer>
+
+</body>
+              </html>

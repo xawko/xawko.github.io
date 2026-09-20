@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="冒险岛战士属性加点攻略大全，包含战士转职路线、力量与敏捷分配比例、技能加点推荐及装备属性优先级，助你打造最强战士职业。">
+    <meta name="keywords" content="冒险岛战士属性加点,冒险岛战士加点,战士转职加点,冒险岛属性分配,战士技能搭配">
+    <title>冒险岛战士属性加点-全职业转职路线与加点策略指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d32f2f;
+            --secondary-color: #1976d2;
+            --accent-color: #fbc02d;
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --bg-light: #f5f5f5;
+            --bg-white: #ffffff;
+            --border-radius: 8px;
+            --shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--bg-white);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-gray);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a237e 0%, #c62828 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Main Content Layout */
+        .main-content {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 30px;
+            margin-top: 30px;
+            margin-bottom: 60px;
+        }
+
+        /* Sidebar */
+        aside {
+            position: sticky;
+            top: 90px;
+            height: fit-content;
+        }
+
+        .sidebar-card {
+            background: var(--bg-white);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            box-shadow: var(--shadow);
+            margin-bottom: 20px;
+        }
+
+        .sidebar-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--bg-light);
+            color: var(--text-dark);
+        }
+
+        .class-menu li {
+            margin-bottom: 8px;
+        }
+
+        .class-menu a {
+            display: block;
+            padding: 8px 12px;
+            border-radius: 4px;
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        .class-menu a:hover, .class-menu a.active {
+            background-color: #ffebee;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .stat-box {
+            background: var(--bg-light);
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+
+        .stat-value {
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+
+        /* Article Content */
+        article {
+            background: var(--bg-white);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            box-shadow: var(--shadow);
+        }
+
+        .article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .article-header h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .meta-info {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            display: flex;
+            gap: 15px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        section h3::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 24px;
+            background-color: var(--secondary-color);
+            margin-right: 12px;
+            border-radius: 2px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #444;
+        }
+
+        .highlight-box {
+            background-color: #e3f2fd;
+            border-left: 4px solid var(--secondary-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .highlight-box strong {
+            color: #0d47a1;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        /* Attribute Table */
+        .attr-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        .attr-table th, .attr-table td {
+            border: 1px solid #e0e0e0;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .attr-table th {
+            background-color: #f5f5f5;
+            font-weight: 600;
+            width: 30%;
+        }
+
+        .attr-table td {
+            background-color: #fafafa;
+        }
+
+        /* Steps */
+        .steps-list {
+            counter-reset: step;
+        }
+
+        .steps-list li {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 20px;
+        }
+
+        .steps-list li::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-dark);
+        }
+
+        .faq-question:hover {
+            color: var(--primary-color);
+        }
+
+        .faq-answer {
+            margin-top: 10px;
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #263238;
+            color: #cfd8dc;
+            padding: 40px 0;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #37474f;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            aside {
+                position: static;
+            }
+
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 10px 0;
+                gap: 10px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 0.85rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .attr-table {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <span>⚔️</span> 冒险岛攻略组
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">职业加点</a></li>
+                    <li><a href="#">装备推荐</a></li>
+                    <li><a href="#">技能模拟</a></li>
+                    <li><a href="#">转职指南</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>战士属性加点全解析</h1>
+            <p>从红战士到黑骑士，掌握核心力量与敏捷比例，打造你的终极战士职业。</p>
+        </div>
+    </section>
+
+    <div class="container main-content">
+        <!-- Sidebar Navigation -->
+        <aside>
+            <div class="sidebar-card">
+                <h3>战士转职路线</h3>
+                <ul class="class-menu">
+                    <li><a href="#">勇者 (战士)</a></li>
+                    <li><a href="#" class="active">骑士 (转职)</a></li>
+                    <li><a href="#">圣骑士</a></li>
+                    <li><a href="#">黑骑士</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>属性分配速查</h3>
+                <div class="stat-box">
+                    <div class="stat-row">
+                        <span>力量 (STR)</span>
+                        <span class="stat-value">核心</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>敏捷 (DEX)</span>
+                        <span class="stat-value">30+</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>智力 (INT)</span>
+                        <span class="stat-value">0</span>
+                    </div>
+                    <div class="stat-row">
+                        <span>运气 (LUK)</span>
+                        <span class="stat-value">0</span>
+                    </div>
+                </div>
+                <p style="font-size: 0.8rem; color: #888; margin-top: 10px;">*敏捷建议至少30以穿戴基础装备</p>
+            </div>
+        </aside>
+
+        <!-- Main Article -->
+        <article>
+            <div class="article-header">
+                <h2>骑士 (Knight) 属性加点与技能规划</h2>
+                <div class="meta-info">
+                    <span>📅 发布于 2023-10-27</span>
+                    <span>👁️ 阅读 12,304</span>
+                </div>
+            </div>
+
+            <section>
+                <h3>核心属性分配原则</h3>
+                <p>在《冒险岛》中，战士职业的输出能力主要取决于<strong>力量 (STR)</strong>。力量直接决定了攻击力的高低。因此，所有转职路线的加点核心都是<strong>全点力量</strong>。</p>
+                <div class="highlight-box">
+                    <strong>必读提示：</strong>
+                    <p style="margin-bottom: 0;">虽然我们要全力堆力量，但<strong>敏捷 (DEX)</strong>依然不可或缺。敏捷决定了能否穿戴装备所需的等级要求。在前期，建议手动加到至少 30 点，以便穿戴满属性的基础装备；后期则主要依靠装备自带的敏捷属性来满足需求。</p>
+                </div>
+            </section>
+
+            <section>
+                <h3>详细加点流程</h3>
+                <ul class="steps-list">
+                    <li><strong>勇者 (1转) 阶段：</strong> 纯力量加点。利用勇者的强力物理攻击技能快速清怪。</li>
+                    <li><strong>骑士 (2转) 阶段：</strong> 继续全点力量。重点升级攻击技能，如“快速攻击”和“攻击强化”，这能显著提升你的DPS。</li>
+                    <li><strong>圣骑士 (3转) 阶段：</strong> 依然保持全力量。此时可以开始考虑投入少量点数到“精准攻击”以提升命中率，但主要资源仍应集中在力量上。</li>
+                    <li><strong>黑骑士 (4转) 阶段：</strong> 全力加点。黑骑士依赖“暗影之怒”的被动效果，高力量能最大化这一技能的爆发伤害。</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>技能加点建议</h3>
+                <p>战士的技能树主要分为物理攻击、辅助增益和生存技能。对于纯输出流加点，请参考以下优先级：</p>
+                <table class="attr-table">
+                    <thead>
+                        <tr>
+                            <th>技能名称</th>
+                            <th>推荐等级</th>
+                            <th>理由</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>快速攻击</td>
+                            <td>20级</td>
+                            <td>大幅提升攻速，战士的核心输出手段。</td>
+                        </tr>
+                        <tr>
+                            <td>攻击强化</td>
+                            <td>20级</td>
+                            <td>增加攻击力，提升物理伤害的基础数值。</td>
+                        </tr>
+                        <tr>
+                            <td>精准攻击</td>
+                            <td>20级</td>
+                            <td>提升命中率，确保攻击不出现未命中的情况。</td>
+                        </tr>
+                        <tr>
+                            <td>盾击 / 刀刃风暴</td>
+                            <td>根据转职选择</td>
+                            <td>骑士转职后的主力群攻技能，建议优先点满。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3>常见问题 (FAQ)</h3>
+                <div class="faq-item">
+                    <div class="faq-question">战士需要加一点智力或运气吗？</div>
+                    <div class="faq-answer">不需要。除非你是为了穿戴特定装备（如某些特殊套装），否则战士职业完全不需要投入点数到智力或运气上，所有属性点应全部加在力量上。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">敏捷到底加多少合适？</div>
+                    <div class="faq-answer">前期（1-20级）建议手动加到30左右，这样能穿装备。20级之后，除非装备属性不够，否则不要再手动加敏捷，依靠装备自带的敏捷属性即可。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">圣骑士和黑骑士加点有什么区别？</div>
+                    <div class="faq-answer">在属性加点层面，两者没有区别，都是全力量。区别主要在于技能选择：圣骑士侧重于圣属性攻击和防御，黑骑士则侧重于吸血和暗属性爆发。</div>
+                </div>
+            </section>
+        </article>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>关于本站</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.6;">提供最全的冒险岛职业攻略、装备搭配及游戏技巧分享，致力于帮助玩家快速上手，提升游戏体验。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">战士加点</a></li>
+                        <li><a href="#">法师加点</a></li>
+                        <li><a href="#">弓箭手加点</a></li>
+                        <li><a href="#">飞侠加点</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>热门职业</h4>
+                    <ul>
+                        <li><a href="#">龙神加点</a></li>
+                        <li><a href="#">幻影加点</a></li>
+                        <li><a href="#">恶魔复仇者加点</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 冒险岛攻略组. All rights reserved. 本站为游戏攻略整理，非官方网站。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的FAQ交互逻辑
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+                  </html>

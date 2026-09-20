@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="自查报告格式模板大全，提供企业自查报告、个人自查报告、项目自查报告的标准写作规范与范文示例，助您快速撰写合规、规范的报告文件。">
+    <meta name="keywords" content="自查报告格式,自查报告模板,企业自查报告,个人自查报告,工作报告">
+    <title>自查报告格式-标准模板与写作规范指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --text-light: #666;
+            --bg-color: #f9fbfd;
+            --card-bg: #ffffff;
+            --border-color: #e1e4e8;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 32px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: var(--spacing-md) var(--spacing-lg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: var(--spacing-lg);
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-md);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto var(--spacing-lg);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+
+        .cta-button:active {
+            transform: scale(0.98);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: var(--spacing-lg) 20px;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-md);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 2px solid var(--border-color);
+            display: inline-block;
+        }
+
+        /* Steps Grid */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .step-card {
+            background: var(--card-bg);
+            padding: var(--spacing-lg);
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s;
+        }
+
+        .step-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+        }
+
+        .step-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            opacity: 0.3;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .step-card h3 {
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.2rem;
+        }
+
+        /* Template Showcase */
+        .template-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+        }
+
+        .template-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: var(--spacing-lg);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: box-shadow 0.2s;
+        }
+
+        .template-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+
+        .template-info {
+            flex: 1;
+        }
+
+        .template-info h3 {
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.25rem;
+        }
+
+        .template-tags span {
+            display: inline-block;
+            background-color: #e8f4fd;
+            color: var(--accent-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+
+        .download-btn {
+            background-color: white;
+            border: 1px solid var(--border-color);
+            color: var(--primary-color);
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .download-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        /* Writing Guide */
+        .guide-content {
+            background: var(--card-bg);
+            padding: var(--spacing-lg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .guide-content h3 {
+            margin-top: var(--spacing-lg);
+            margin-bottom: var(--spacing-sm);
+            color: var(--primary-color);
+        }
+
+        .guide-content h3:first-child {
+            margin-top: 0;
+        }
+
+        .guide-content p {
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-light);
+        }
+
+        .guide-content ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .guide-content li {
+            margin-bottom: 5px;
+            color: var(--text-light);
+        }
+
+        /* FAQ */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: var(--spacing-lg);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: var(--spacing-sm);
+            color: var(--primary-color);
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 20px 20px;
+            margin-top: var(--spacing-lg);
+        }
+
+        .footer-inner {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            color: rgba(255,255,255,0.7);
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            nav ul {
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .template-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .download-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">
+            <span>Report</span>助手
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#formats">通用格式</a></li>
+                <li><a href="#templates">常用模板</a></li>
+                <li><a href="#guide">写作指南</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>自查报告格式规范与写作指南</h1>
+        <p>提供标准化的自查报告格式模板，涵盖企业、个人及项目自查的写作要点，助您高效、合规地完成报告撰写。</p>
+        <a href="#templates" class="cta-button">查看免费模板</a>
+    </section>
+
+    <div class="container">
+        <!-- Section 1: Core Structure -->
+        <section id="formats">
+            <h2 class="section-title">自查报告通用结构</h2>
+            <p style="margin-bottom: 20px; color: var(--text-light);">一份规范的自查报告通常包含以下核心部分，确保内容完整、逻辑清晰：</p>
+            
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>标题与文号</h3>
+                    <p>明确报告名称，通常格式为“关于[事项]的自查报告”。如需正式行文，需标注文号（如：X自字〔2023〕001号）。</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>主送机关</h3>
+                    <p>注明报告呈报的上级单位或相关部门，体现报告的针对性和接收对象。</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>正文内容</h3>
+                    <p>包括自查依据、自查时间范围、自查内容、发现的问题、整改措施及整改结果。</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <h3>落款与日期</h3>
+                    <p>报告单位全称并加盖公章，注明成文日期，确保报告的法律效力。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Templates -->
+        <section id="templates">
+            <h2 class="section-title">常用自查报告模板</h2>
+            <p style="margin-bottom: 20px; color: var(--text-light);">根据不同的应用场景，选择合适的模板结构：</p>
+            
+            <div class="template-list">
+                <!-- Template 1 -->
+                <div class="template-item">
+                    <div class="template-info">
+                        <h3>企业合规经营自查报告</h3>
+                        <div class="template-tags">
+                            <span>企业管理</span>
+                            <span>合规审查</span>
+                            <span>财务审计</span>
+                        </div>
+                        <p style="font-size: 0.9rem; color: #666;">适用于企业定期进行的税务、环保及安全生产合规性检查，重点描述经营状况与法律符合度。</p>
+                    </div>
+                    <button class="download-btn" onclick="alert('此处可下载企业合规自查报告Word模板')">下载模板</button>
+                </div>
+
+                <!-- Template 2 -->
+                <div class="template-item">
+                    <div class="template-info">
+                        <h3>个人工作作风自查报告</h3>
+                        <div class="template-tags">
+                            <span>个人总结</span>
+                            <span>绩效考核</span>
+                            <span>廉政建设</span>
+                        </div>
+                        <p style="font-size: 0.9rem; color: #666;">适用于公务员、事业单位人员或企业员工进行的自我剖析，涵盖思想、工作、作风等方面。</p>
+                    </div>
+                    <button class="download-btn" onclick="alert('此处可下载个人作风自查报告Word模板')">下载模板</button>
+                </div>
+
+                <!-- Template 3 -->
+                <div class="template-item">
+                    <div class="template-info">
+                        <h3>项目进度与质量自查报告</h3>
+                        <div class="template-tags">
+                            <span>工程管理</span>
+                            <span>项目管理</span>
+                            <span>验收评估</span>
+                        </div>
+                        <p style="font-size: 0.9rem; color: #666;">针对在建项目进行的阶段性检查，重点汇报工程进度是否滞后、质量标准是否达标。</p>
+                    </div>
+                    <button class="download-btn" onclick="alert('此处可下载项目自查报告Word模板')">下载模板</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Writing Guide -->
+        <section id="guide">
+            <h2 class="section-title">自查报告写作指南</h2>
+            <div class="guide-content">
+                <h3>1. 明确自查目的</h3>
+                <p>在报告开头简述自查的目的，例如“为了加强内部管理，确保XX工作的合规性，特对本年度工作进行自查”。</p>
+                
+                <h3>2. 详实描述问题</h3>
+                <p>实事求是地列出发现的问题。避免使用模糊词汇，应具体指出问题表现、发生时间及涉及范围。</p>
+                
+                <h3>3. 制定整改措施</h3>
+                <p>针对每个问题提出具体的整改方案，明确整改责任人、完成时限和预期效果，体现“立行立改”的态度。</p>
+                
+                <h3>4. 语言规范严谨</h3>
+                <p>使用书面语，避免口语化表达。条理清晰，可适当使用小标题或序号对段落进行分层，便于阅读。</p>
+            </div>
+        </section>
+
+        <!-- Section 4: FAQ -->
+        <section id="faq">
+            <h2 class="section-title">常见问题解答</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">Q：自查报告需要盖章吗？</div>
+                    <div class="faq-answer">A：通常情况下，单位或部门提交的自查报告需要加盖单位公章，个人自查报告一般由本人签名并注明日期即可。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q：发现的问题怎么写？</div>
+                    <div class="faq-answer">A：应客观陈述事实，不隐瞒、不夸大。可以使用“存在XX情况”、“未达到XX标准”等表述。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q：自查报告的格式有统一标准吗？</div>
+                    <div class="faq-answer">A：没有全国统一的格式，但通常遵循公文写作规范，包含标题、主送机关、正文、落款和日期。</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-col">
+            <h4>Report助手</h4>
+            <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">专注提供各类自查报告写作格式与模板资源，助力高效办公。</p>
+        </div>
+        <div class="footer-col">
+            <h4>快速链接</h4>
+            <ul>
+                <li><a href="#">企业自查</a></li>
+                <li><a href="#">个人总结</a></li>
+                <li><a href="#">工程自查</a></li>
+                <li><a href="#">下载中心</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>联系我们</h4>
+            <ul>
+                <li><a href="#">使用帮助</a></li>
+                <li><a href="#">意见反馈</a></li>
+                <li><a href="#">免责声明</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        &copy; 2023 自查报告格式指南网 版权所有.
+    </div>
+</footer>
+
+</body>
+</html>

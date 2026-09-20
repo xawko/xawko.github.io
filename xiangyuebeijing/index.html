@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相约北京-2025年春季旅行指南与城市体验攻略</title>
+    <meta name="description" content="相约北京2025最新旅行指南，涵盖故宫、长城、环球影城等热门景点深度攻略，春季赏花路线规划，地道美食推荐及住宿交通实用建议。">
+    <meta name="keywords" content="相约北京,北京旅游攻略,北京景点,故宫游览,长城徒步,北京美食,环球影城,北京住宿">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #c8102e;
+            --secondary-color: #1e3a8a;
+            --accent-color: #fbbf24;
+            --text-main: #1f2937;
+            --text-light: #6b7280;
+            --bg-body: #f3f4f6;
+            --bg-card: #ffffff;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--bg-card);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #a00d26;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 600px;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://picsum.photos/seed/beijing_skyline/1920/1080.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+
+        .hero-btn {
+            background-color: var(--accent-color);
+            color: var(--text-main);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        .hero-btn:hover {
+            background-color: #f59e0b;
+            transform: translateY(-2px);
+        }
+
+        /* Quick Info Bar */
+        .info-bar {
+            background-color: var(--bg-card);
+            padding: 1.5rem 0;
+            margin-top: -3rem;
+            position: relative;
+            z-index: 10;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .info-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .info-item p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Attractions Section */
+        .section {
+            padding: 5rem 0;
+        }
+
+        .attractions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-image {
+            height: 200px;
+            background-color: #ddd;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-image img {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-tag {
+            display: inline-block;
+            background-color: #fee2e2;
+            color: var(--primary-color);
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .card-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-content p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-link {
+            color: var(--secondary-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .card-link::after {
+            content: "→";
+            margin-left: 0.25rem;
+            transition: margin-left 0.2s;
+        }
+
+        .card-link:hover::after {
+            margin-left: 0.5rem;
+        }
+
+        /* Itinerary Section */
+        .itinerary-section {
+            background-color: white;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #e5e7eb;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: var(--bg-card);
+            border: 4px solid var(--accent-color);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+
+        .right::after {
+            left: -10px;
+        }
+
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .timeline-date {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        /* Food Section */
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .food-card {
+            text-align: center;
+        }
+
+        .food-icon {
+            width: 80px;
+            height: 80px;
+            background-color: #fef3c7;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 2rem;
+        }
+
+        .food-card h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .food-card p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Tips Section */
+        .tips-section {
+            background-color: #e0f2fe;
+        }
+
+        .tips-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .tips-list li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .tips-list li::before {
+            content: "✓";
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111827;
+            color: #d1d5db;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .nav-links {
+                display: none; /* Simplified for mobile */
+            }
+
+            .timeline::after {
+                left: 31px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .timeline-item::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+
+            .left::after, .right::after {
+                left: 21px;
+            }
+
+            .right {
+                left: 0%;
+            }
+            
+            .tips-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 21h18M5 21V7l8-4 8 4v14M8 21v-9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v9"></path>
+                </svg>
+                相约<span>北京</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#attractions">热门景点</a>
+                <a href="#itinerary">行程规划</a>
+                <a href="#food">地道美食</a>
+                <a href="#tips">旅行贴士</a>
+            </nav>
+            <a href="#" class="cta-button">立即预订</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>相约北京，共赏古都风华</h1>
+                <p>探索千年古都的深厚底蕴，感受现代都市的蓬勃活力。从故宫红墙到环球影城，为您呈现最全面的北京旅行体验。</p>
+                <a href="#attractions" class="hero-btn">开启探索之旅</a>
+            </div>
+        </section>
+
+        <!-- Quick Info Bar -->
+        <div class="container">
+            <div class="info-bar">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>最佳季节</h3>
+                        <p>春秋两季 (4-5月, 9-10月)</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>建议游玩</h3>
+                        <p>5-7天深度游</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>推荐交通</h3>
+                        <p>地铁覆盖全城</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>天气概况</h3>
+                        <p>温带季风气候</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Attractions Section -->
+        <section id="attractions" class="section">
+            <div class="container">
+                <h2 class="section-title">必游胜地</h2>
+                <p class="section-subtitle">北京汇聚了世界文化遗产与现代娱乐地标，每一处都值得驻足。</p>
+                
+                <div class="attractions-grid">
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/forbidden_city/400/300.jpg" alt="故宫博物院">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">世界文化遗产</span>
+                            <h3>故宫博物院</h3>
+                            <p>中国明清两代的皇家宫殿，旧称紫禁城。红墙黄瓦，金碧辉煌，是了解中国古代宫廷文化的最佳去处。</p>
+                            <a href="#" class="card-link">查看游览指南</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/great_wall/400/300.jpg" alt="八达岭长城">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">世界文化遗产</span>
+                            <h3>八达岭长城</h3>
+                            <p>不到长城非好汉。八达岭长城地势险要，城关坚固，是明长城中保存最好的一段，也是最具代表性的一段。</p>
+                            <a href="#" class="card-link">查看游览指南</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/westlake/400/300.jpg" alt="颐和园">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">皇家园林</span>
+                            <h3>颐和园</h3>
+                            <p>中国清朝时期皇家园林，前身为清漪园，坐落在北京西郊，距城区15公里，占地约290公顷。</p>
+                            <a href="#" class="card-link">查看游览指南</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/universal/400/300.jpg" alt="北京环球影城">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">主题乐园</span>
+                            <h3>北京环球影城</h3>
+                            <p>汇聚哈利波特、变形金刚等七大主题景区，带来沉浸式的影视娱乐体验，适合全家出游。</p>
+                            <a href="#" class="card-link">查看游览指南</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/tiananmen/400/300.jpg" alt="天安门广场">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">城市地标</span>
+                            <h3>天安门广场</h3>
+                            <p>世界上最大的城市广场之一，见证了无数历史时刻，周围环绕着人民大会堂、国家博物馆等宏伟建筑。</p>
+                            <a href="#" class="card-link">查看游览指南</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/temple_of_heaven/400/300.jpg" alt="天坛公园">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">皇家祭祀</span>
+                            <h3>天坛公园</h3>
+                            <p>明清两代皇帝“祭天”“祈谷”的场所，其建筑布局和结构体现了中国古代“天人合一”的哲学思想。</p>
+                            <a href="#" class="card-link">查看游览指南</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Itinerary Section -->
+        <section id="itinerary" class="section itinerary-section">
+            <div class="container">
+                <h2 class="section-title">五日精华行程</h2>
+                <p class="section-subtitle">为您规划了从历史文化到现代娱乐的完美平衡路线。</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <span class="timeline-date">Day 1: 初见皇城</span>
+                            <h3>天安门广场 & 故宫</h3>
+                            <p>上午抵达北京，前往天安门广场观看升旗仪式。随后进入故宫博物院，深度游览中轴线，下午前往景山公园俯瞰故宫全景。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <span class="timeline-date">Day 2: 历史印记</span>
+                            <h3>八达岭长城 & 回龙观</h3>
+                            <p>早起前往八达岭长城，感受“不到长城非好汉”的豪情。下午返回市区，参观明十三陵或鸟巢水立方夜景。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <span class="timeline-date">Day 3: 园林雅趣</span>
+                            <h3>颐和园 & 圆明园</h3>
+                            <p>游览中国现存规模最大、保存最完整的皇家园林——颐和园。下午漫步圆明园遗址，了解历史沧桑。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <span class="timeline-date">Day 4: 现代娱乐</span>
+                            <h3>北京环球影城</h3>
+                            <p>全天沉浸式体验北京环球影城，打卡哈利波特魔法世界、变形金刚基地等热门项目，晚上欣赏开园灯光秀。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <span class="timeline-date">Day 5: 市井烟火</span>
+                            <h3>南锣鼓巷 & 王府井</h3>
+                            <p>漫步南锣鼓巷感受老北京胡同文化，探访什刹海酒吧街。最后在王府井大街品尝美食，结束愉快的旅程。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Section -->
+        <section id="food" class="section">
+            <div class="container">
+                <h2 class="section-title">地道美食</h2>
+                <p class="section-subtitle">舌尖上的北京，从宫廷菜到街头小吃，满足您的味蕾。</p>
+                
+                <div class="food-grid">
+                    <div class="food-card">
+                        <div class="food-icon">🥟</div>
+                        <h4>北京烤鸭</h4>
+                        <p>北京最著名的美食代表，皮脆肉嫩，搭配荷叶饼和甜面酱，入口即化。</p>
+                    </div>
+                    <div class="food-card">
+                        <div class="food-icon">🍜</div>
+                        <h4>老北京炸酱面</h4>
+                        <p>手擀面条劲道，配上丰富的菜码和浓郁的二八酱，是地道的家常美味。</p>
+                    </div>
+                    <div class="food-card">
+                        <div class="food-icon">🥢</div>
+                        <h4>铜锅涮肉</h4>
+                        <p>清水锅底，炭火铜锅，涮上鲜切羊肉和芝麻酱，回味无穷。</p>
+                    </div>
+                    <div class="food-card">
+                        <div class="food-icon">🧁</div>
+                        <h4>驴打滚</h4>
+                        <p>豆面卷裹上红豆沙，撒上黄豆面，香甜软糯，是老北京的传统小吃。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section id="tips" class="section tips-section">
+            <div class="container">
+                <div class="tips-container">
+                    <div>
+                        <h2 class="section-title" style="text-align: left;">出行必备</h2>
+                        <p style="margin-bottom: 1.5rem; color: var(--text-main);">为了让您的北京之行更加顺畅，请注意以下事项。</p>
+                        <ul class="tips-list">
+                            <li><strong>预约参观：</strong>故宫、国博等热门场馆需提前7天在官方小程序预约，旺季门票非常紧张。</li>
+                            <li><strong>交通出行：</strong>北京地铁网络发达，几乎覆盖所有景点，建议办理“北京一卡通”或使用手机NFC乘车。</li>
+                            <li><strong>住宿选择：</strong>建议住在地铁沿线（如2号线、4号线），出行方便且性价比高。</li>
+                            <li><strong>证件准备：</strong>请务必携带好身份证，进入景区、酒店及乘坐地铁均需实名验证。</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="section-title" style="text-align: left;">避坑指南</h2>
+                        <ul class="tips-list">
+                            <li><strong>避开旅游团：</strong>尽量避开周一（故宫等闭馆）、周末及法定节假日的高峰期。</li>
+                            <li><strong>正规购票：</strong>不要轻信街头拉客或非官方渠道的低价团，谨防受骗。</li>
+                            <li><strong>防晒补水：</strong>北京春季风沙较大，夏季紫外线强，请做好防护措施。</li>
+                            <li><strong>文明旅游：</strong>请爱护文物古迹，遵守景区规定，共同维护北京的良好形象。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>相约北京</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.8;">
+                        专注于为旅行者提供最实用、最详尽的北京旅游攻略与信息服务。让我们携手相约北京，共赏古都之美。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>热门分类</h4>
+                    <ul>
+                        <li><a href="#">历史文化</a></li>
+                        <li><a href="#">自然风光</a></li>
+                        <li><a href="#">主题乐园</a></li>
+                        <li><a href="#">美食探店</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>实用工具</h4>
+                    <ul>
+                        <li><a href="#">天气查询</a></li>
+                        <li><a href="#">交通时刻表</a></li>
+                        <li><a href="#">酒店预订</a></li>
+                        <li><a href="#">景点门票</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">投稿合作</a></li>
+                        <li><a href="#">版权声明</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 相约北京旅行指南 版权所有.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+      </html>

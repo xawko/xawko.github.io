@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>苍月女战士-古典奇幻冒险与角色图鉴指南</title>
+    <meta name="description" content="苍月女战士专题页面，提供苍月女战士角色背景、技能解析、装备推荐及同人创作鉴赏。深入了解这位古典奇幻题材中的经典女性战士形象。">
+    <meta name="keywords" content="苍月女战士, 奇幻角色, 角色图鉴, 女战士, 奇幻冒险, 动漫角色">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #1a1c2c;
+            --accent-color: #c9a227;
+            --text-color: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --card-bg: #252836;
+            --border-color: #3e4257;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-left: 1rem;
+            color: #fff;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10%;
+            height: 80%;
+            width: 4px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(26, 28, 44, 0.95);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            font-size: 1rem;
+            color: var(--text-color);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(26, 28, 44, 0.8), rgba(61, 90, 254, 0.4)), 
+                        url('https://picsum.photos/seed/night/1920/1080.jpg') no-repeat center center/cover;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            z-index: 2;
+            max-width: 800px;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(201, 162, 39, 0.3);
+            border-radius: 8px;
+            backdrop-filter: blur(4px);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0,0,0,0.8);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #ddd;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--accent-color);
+            color: #fff;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #b08d1f;
+            transform: translateY(-2px);
+        }
+
+        /* Character Profile Section */
+        .profile-section {
+            padding: 4rem 0;
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .character-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            border: 1px solid var(--border-color);
+        }
+
+        .character-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: sepia(30%) contrast(1.1);
+        }
+
+        .profile-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-item label {
+            display: block;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .info-item span {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .profile-desc {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            text-align: justify;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #ccc;
+        }
+
+        /* Abilities Section */
+        .abilities-section {
+            background-color: #1e202e;
+            padding: 4rem 0;
+        }
+
+        .abilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .ability-card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+
+        .ability-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .ability-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .ability-card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+        }
+
+        .ability-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 4rem 0;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            aspect-ratio: 3/4;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            padding: 1rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay p {
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: #1e202e;
+            padding: 4rem 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: var(--card-bg);
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 1.5rem;
+            color: var(--text-muted);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding-bottom: 1.5rem;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        /* Footer */
+        footer {
+            background-color: #12141e;
+            padding: 3rem 0;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .profile-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none; /* Simplified for single file demo */
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">苍月女战士</div>
+            <nav class="nav-links">
+                <a href="#profile">角色档案</a>
+                <a href="#abilities">战斗技能</a>
+                <a href="#gallery">视觉图鉴</a>
+                <a href="#faq">常见问题</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>苍月女战士</h1>
+                <p>在古老的传说中，她是守护苍穹之月的最后一位战士。挥舞着月之刃，斩断黑暗的侵袭。</p>
+                <a href="#profile" class="btn">探索她的故事</a>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="profile-section">
+            <div class="container">
+                <h2 class="section-title">角色档案</h2>
+                <div class="profile-grid">
+                    <div class="character-card">
+                        <img src="https://picsum.photos/seed/witch/600/800.jpg" alt="苍月女战士立绘" class="character-img">
+                    </div>
+                    <div class="profile-info">
+                        <h2>月影·希雅</h2>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <label>称号</label>
+                                <span>苍月女战士</span>
+                            </div>
+                            <div class="info-item">
+                                <label>种族</label>
+                                <span>半精灵</span>
+                            </div>
+                            <div class="info-item">
+                                <label>武器</label>
+                                <span>月之刃</span>
+                            </div>
+                            <div class="info-item">
+                                <label>阵营</label>
+                                <span>光明守卫</span>
+                            </div>
+                        </div>
+                        <p class="profile-desc">
+                            希雅出生在苍月高地的古老家族，自幼展现出惊人的战斗天赋。她的武器“月之刃”并非凡铁，而是由陨落的苍月碎片锻造而成，能够吸收月光并增幅攻击力。在黑暗势力“影牙军团”入侵大陆的危机中，希雅挺身而出，成为了抵抗军的精神领袖。她性格坚毅，不畏强权，但在面对同胞的牺牲时也会流露出温柔的一面。
+                        </p>
+                        <div class="tags">
+                            <span class="tag">剑术大师</span>
+                            <span class="tag">月光操控</span>
+                            <span class="tag">守护者</span>
+                            <span class="tag">半精灵</span>
+                            <span class="tag">传奇英雄</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Abilities Section -->
+        <section id="abilities" class="abilities-section">
+            <div class="container">
+                <h2 class="section-title">战斗技能</h2>
+                <div class="abilities-grid">
+                    <article class="ability-card">
+                        <div class="ability-icon">🌙</div>
+                        <h3>月轮斩</h3>
+                        <p>凝聚月光于剑身，挥出一道半月形的能量波。该技能具有穿透效果，能同时击中前方直线上的多个敌人。</p>
+                    </article>
+                    <article class="ability-card">
+                        <div class="ability-icon">🛡️</div>
+                        <h3>苍月护盾</h3>
+                        <p>在身前展开由月光构成的半圆形护盾，能够抵挡一定量的物理和魔法伤害。护盾破碎时会反弹伤害给攻击者。</p>
+                    </article>
+                    <article class="ability-card">
+                        <div class="ability-icon">✨</div>
+                        <h3>月影步</h3>
+                        <p>利用月光的折射，在短时间内获得瞬移能力，并在移动路径上留下残影，迷惑敌人。</p>
+                    </article>
+                    <article class="ability-card">
+                        <div class="ability-icon">⚔️</div>
+                        <h3>终极·满月崩坏</h3>
+                        <p>召唤满月之力，对大范围内造成毁灭性的冲击波。此技能冷却时间较长，是扭转战局的关键一击。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">视觉图鉴</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/sword1/400/600.jpg" alt="战斗姿态">
+                        <div class="gallery-overlay">
+                            <p>决战前的蓄力姿态</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/sword2/400/600.jpg" alt="武器特写">
+                        <div class="gallery-overlay">
+                            <p>月之刃的寒光</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/sword3/400/600.jpg" alt="背景故事">
+                        <div class="gallery-overlay">
+                            <p>回忆中的苍月高地</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://picsum.photos/seed/sword4/400/600.jpg" alt="装备细节">
+                        <div class="gallery-overlay">
+                            <p>精巧的护甲细节</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="container faq-container">
+                <h2 class="section-title">常见问题</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">苍月女战士的原型来源是什么？</div>
+                    <div class="faq-answer">
+                        <p>苍月女战士的形象融合了古典奇幻文学中的“月之女神”与“女武神”元素，象征着自然力量与守护职责的结合。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">如何获得她的专属武器？</div>
+                    <div class="faq-answer">
+                        <p>在相关的角色扮演游戏或小说设定中，月之刃通常需要完成一系列高难度的任务或通过特定的剧情选择才能解锁。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">这个角色适合什么类型的玩家？</div>
+                    <div class="faq-answer">
+                        <p>苍月女战士适合喜欢近战输出、高机动性和团队辅助能力的玩家。她的技能组合既适合单挑BOSS，也能在团队副本中提供控制。</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 苍月女战士专题站. 保留所有权利.</p>
+            <p>本页面仅供内容展示与角色解析，不代表官方授权。</p>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的FAQ折叠交互
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                item.querySelector('.faq-question').addEventListener('click', () => {
+                    // 关闭其他已打开的项
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // 切换当前项
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
